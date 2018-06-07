@@ -99,3 +99,18 @@
 }
 .ellipse {
 }
+.custom_button {
+  color:#FFFFFF;
+}
+.custom_button_icon {
+}
+.custom_droplist_background {
+}
+.custom_date_picker_day_-_not_current {
+  color:#CCCCCC;
+}
+.custom_date_picker_day_-_current {
+}
+.custom_date_picker_day_-_today {
+  color:#4CC189;
+}
