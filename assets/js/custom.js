@@ -12,4 +12,30 @@ $(function(){
         scrollTop: $( $.attr(this, 'href') ).offset().top}, 750);
 		return false;
 	});
+    $('.dropdown').hover(function(){
+        $('.dropdown-toggle', this).trigger('click');
+    });
 });
+
+var Sticky = new hcSticky('.sidebar', {
+    stickTo: '.content',
+    innerTop: -80,
+    queries: {
+        980: {
+            disable: true
+        }
+    }
+});
+
+//var infScroll = new InfiniteScroll( ".row", {
+//		path: function() {
+//			// 頁面路徑
+//			if ( this.loadCount < 2 ) {
+//				// 只讀取前兩頁資料
+//				var nextIndex = this.loadCount + 2; // 2
+//				return "article-list" + nextIndex + ".html"; // page2.html
+//			}
+//		},
+//		append: ".post", // 匯入物件類別
+//		status: ".scroller-status" // 捲軸狀態類別
+//})
