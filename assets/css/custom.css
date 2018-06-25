@@ -1,3 +1,6 @@
+body, html {
+  height: 100%; }
+
 body {
   background: url(../img/ui/bg-body.jpg) center 0 repeat-x #fff; }
 
