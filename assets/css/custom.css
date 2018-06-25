@@ -96,8 +96,12 @@ a:hover {
 .nav-modal {
   position: absolute;
   top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   margin-top: -1rem;
-  width: 100%; }
+  width: 100%;
+  max-width: 1110px; }
 .nav-modal .btn-left, .nav-modal .btn-right {
   position: absolute;
   display: block;
