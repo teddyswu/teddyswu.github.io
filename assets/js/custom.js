@@ -27,15 +27,15 @@ var Sticky = new hcSticky('.sidebar', {
     }
 });
 
-//var infScroll = new InfiniteScroll( ".row", {
-//		path: function() {
-//			// 頁面路徑
-//			if ( this.loadCount < 2 ) {
-//				// 只讀取前兩頁資料
-//				var nextIndex = this.loadCount + 2; // 2
-//				return "article-list" + nextIndex + ".html"; // page2.html
-//			}
-//		},
-//		append: ".post", // 匯入物件類別
-//		status: ".scroller-status" // 捲軸狀態類別
-//})
+$('.btn-like').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+$('.btn-smile').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+$('.btn-meh').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+$('.btn-frown').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});

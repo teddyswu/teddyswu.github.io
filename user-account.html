@@ -28,7 +28,7 @@
 
 <body id="top">
 
-    <nav class="pushy pushy-right bg-white">
+    <nav class="pushy pushy-left bg-white">
         <!-- module: nav-mobile -->
         <div id="nav-mobile"></div>
         <!-- module: ./nav-mobile -->
@@ -70,7 +70,8 @@
                 <!-- 已登入 -->
                 <div class="dropdown">
                     <a class="btn btn-sm btn-fb px-2 dropdown-toggle" href="" data-toggle="dropdown">
-                        <i class="fab fa-facebook-f"></i>
+<!--                        <i class="fab fa-facebook-f"></i>-->
+                        <img class="img-fluid rounded-circle" src="assets/img/uploads/avatar2.jpg" alt="" style="width: 20px">
                         <span class="d-none d-lg-inline-block">abcdefg</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
@@ -90,7 +91,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-center text-success mb-10">
-                        <h1 class="font-weight-bold">友善群眾</h1>
+                        <h1 class="font-weight-bold">友善會員</h1>
                         <div class="h3">帳號管理</div>
                     </div>
                 </div>
@@ -99,13 +100,13 @@
                 <div class="col-12 mb-6">
                     <ul class="nav justify-content-center border-top border-bottom border-gray py-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="user-activity.html">活動紀錄</a>
+                            <a class="nav-link" href="user-account.html">帳號設定</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">追蹤友善農夫</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="user-account.html">帳號設定</a>
+                            <a class="nav-link" href="user-activity.html">活動紀錄</a>
                         </li>
                     </ul>
                 </div>
@@ -118,9 +119,14 @@
                             <div class="col-sm-10">
                                 <input type="text" class="form-control-plaintext" id="id" value="abcdefg">
                             </div>
+                            <div class="col-12">
+                                <small class="form-text text-muted">
+                                    * 臉書會員的照片與您的臉書相同，若欲替換照片請由臉書帳號作更新，O.Story也會一起更新哦！
+                                </small>
+                            </div>
                         </div>
                         <div class="form-group row">
-                            <label for="name" class="col-sm-2 col-form-label">全民</label>
+                            <label for="name" class="col-sm-2 col-form-label">全名</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="name" value="" required>
                             </div>
