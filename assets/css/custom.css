@@ -462,7 +462,7 @@ a:hover {
   opacity: 0.25; }
 .slick-prev:before, .slick-next:before {
   font-family: "FontAwesome";
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1;
   color: #fff;
   opacity: 0.75;
@@ -475,9 +475,9 @@ a:hover {
   left: auto;
   right: 5px; }
 .slick-prev:before {
-  content: ""; }
+  content: "‹"; }
 [dir="rtl"] .slick-prev:before {
-  content: ""; }
+  content: "›"; }
 
 .slick-next {
   right: 5px; }
@@ -485,9 +485,9 @@ a:hover {
   left: 5px;
   right: auto; }
 .slick-next:before {
-  content: ""; }
+  content: "›"; }
 [dir="rtl"] .slick-next:before {
-  content: ""; }
+  content: "‹"; }
 
 /* Dots */
 .slick-dots {
