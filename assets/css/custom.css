@@ -13,6 +13,9 @@ a:hover {
 .text-fb {
   color: #3a589a; }
 
+.text-line {
+  color: #00b900; }
+
 @media (max-width: 991.98px) {
   .navbar-brand img {
     max-width: 150px; } }

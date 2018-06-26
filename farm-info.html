@@ -369,15 +369,27 @@
                                     </div>
                                 </div>
                                 <div class="col text-right">
-                                    <a class="text-danger btn-like" href="javascript:void();">
-                                        <i class="far fa-fw fa-lg fa-heart"></i>
-                                    </a>
-                                    <a class="text-dark" href="javascript:void();">
-                                        <i class="fas fa-fw fa-lg fa-share"></i>
-                                    </a>
-                                    <a class="text-dark" href="javascript:void();">
-                                        <i class="far fa-fw fa-lg fa-envelope"></i>
-                                    </a>
+                                    <div class="btn-group">
+                                        <a class="text-danger btn btn-sm btn-like" href="javascript:void();">
+                                            <i class="far fa-fw fa-lg fa-heart"></i>
+                                        </a>
+                                        <div class="dropdown">
+                                            <a class="text-dark btn btn-sm" href="javascript:void();" data-toggle="dropdown">
+                                                <i class="fas fa-fw fa-lg fa-share"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right p-1" style="min-width: auto;">
+                                                <a class="text-fb" href="#">
+                                                    <i class="fab fa-fw fa-lg fa-facebook"></i>
+                                                </a>
+                                                <a class="text-line" href="#">
+                                                    <i class="fab fa-fw fa-lg fa-line"></i>
+                                                </a>
+                                                <a class="text-dark" href="#">
+                                                    <i class="far fa-fw fa-lg fa-envelope"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="d-md-none border-top mt-3">
