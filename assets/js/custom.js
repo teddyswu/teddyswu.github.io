@@ -29,7 +29,7 @@ $(function(){
 
     $('.slider-modal').slick({
         dots: true,
-        autoplay: true,
+//        autoplay: true,
     });
 });
 
