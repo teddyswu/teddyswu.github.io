@@ -15,20 +15,21 @@ $(function(){
     $('.dropdown').hover(function(){
         $('.dropdown-toggle', this).trigger('click');
     });
-});
 
-$('.modal').on('shown.bs.modal', function (e) {
-    $('html').addClass('freezePage');
-    $('body').addClass('freezePage');
-    $('.slider-modal').resize();
-});
-$('.modal').on('hidden.bs.modal', function (e) {
-    $('html').removeClass('freezePage');
-    $('body').removeClass('freezePage');
-});
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('html').addClass('freezePage');
+        $('body').addClass('freezePage');
+        $('.slider-modal').resize();
+        $('.slider-modal').slick("setPosition", 0);
+    });
+    $('.modal').on('hidden.bs.modal', function (e) {
+        $('html').removeClass('freezePage');
+        $('body').removeClass('freezePage');
+    });
 
-$('.slider-modal').slick({
-    dots: true,
+    $('.slider-modal').slick({
+        dots: true,
+    });
 });
 
 var Sticky = new hcSticky('.sidebar', {
