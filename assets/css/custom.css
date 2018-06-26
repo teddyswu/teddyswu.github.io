@@ -220,6 +220,9 @@ a:hover {
 .badge-primary, .badge-succes {
   color: #fff; }
 
+input[type="text"], input[type="email"], input[type="date"] {
+  height: 2.5rem; }
+
 /*! Pushy - v1.1.0 - 2017-1-30
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
