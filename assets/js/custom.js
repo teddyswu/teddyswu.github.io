@@ -6,14 +6,41 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+//if ( window.location.hash ) scroll(0,0);
+//// void some browsers issue
+//setTimeout( function() { scroll(0,0); }, 1);
+
 $(function(){
-    $('.btn-anchor').click(function(){
+
+    $('.anchor').click(function(){
 		$('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top}, 750);
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 50}, 750);
 		return false;
 	});
-    $('.dropdown').hover(function(){
-        $('.dropdown-toggle', this).trigger('click');
+
+//    $('.scroll').on('click', function(e) {
+//        e.preventDefault();
+//        $('html, body').animate({
+//            scrollTop: $($(this).attr('href')).offset().top + 'px'
+//        }, 750);
+//    });
+//    if(window.location.hash) {
+//        $('html, body').animate({
+//            scrollTop: $(window.location.hash).offset().top + 'px'
+//        }, 750);
+//    }
+
+//    $('.dropdown').hover(function(){
+//        $('.dropdown-toggle', this).trigger('click');
+//    });
+    $('li.dropdown').on('click', function() {
+        var $el = $(this);
+        if ($el.hasClass('open')) {
+            var $a = $el.children('a.dropdown-toggle');
+            if ($a.length && $a.attr('href')) {
+                location.href = $a.attr('href');
+            }
+        }
     });
 
     $('.modal').on('shown.bs.modal', function (e) {
@@ -42,6 +69,10 @@ var Sticky = new hcSticky('.sidebar', {
         }
     }
 });
+$('#menu').hcSticky({
+//    noContainer: true
+//    top: 0
+  });
 
 $('.btn-like').click(function(){
     $(this).find('i').toggleClass('far fas')

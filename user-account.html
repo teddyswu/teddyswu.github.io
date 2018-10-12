@@ -18,12 +18,12 @@
     <link rel="image_src" href="/assets/img/og-image.jpg" >
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="assets/js/vendor/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
 </head>
 
 <body id="top">
@@ -44,26 +44,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="text-center text-success mb-10">
+                    <div class="text-center text-success mb-7">
                         <h1 class="font-weight-bold">友善會員</h1>
                         <div class="h3">帳號管理</div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12 mb-6">
-                    <ul class="nav justify-content-center border-top border-bottom border-gray py-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="user-account.html">帳號設定</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">追蹤友善農夫</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="user-activity.html">活動紀錄</a>
-                        </li>
-                    </ul>
+        </div>
+        <div class="container-fluid border-bottom mb-6 pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nav-responsive">
+                        <ul class="nav nav-tabs nav-justified border-bottom-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="user-info.html">個人主頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="user-account.html">帳號管理</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">誰追蹤我</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user-following.html">追蹤提案</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user-rewards.html">支持紀錄</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user-proposal.html">提案紀錄</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="farm-print.html">列印工作紀錄</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user-activity.html">提案參與紀錄</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <form>
                         <div class="form-group row align-items-center">
@@ -89,6 +114,14 @@
                             <label for="email" class="col-sm-2 col-form-label">電子信箱</label>
                             <div class="col-sm-10">
                                 <input type="email" class="form-control" id="email" value="" required>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">訂閱電子報</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2">允許訊息通知</label>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -113,6 +146,24 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">網址名稱</label>
+                            <div class="col-sm-10">
+                                <input type="url" class="form-control" id="urlName" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Facebook</label>
+                            <div class="col-sm-10">
+                                <input type="url" class="form-control" id="urlFB" value="" placeholder="https://facebook.com/page-name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">網站網址</label>
+                            <div class="col-sm-10">
+                                <input type="url" class="form-control" id="url" value="" placeholder="https://www.example.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="info" class="col-sm-2 col-form-label">個人介紹</label>
                             <div class="col-sm-10">
                                 <textarea class="form-control" rows="5"></textarea>
@@ -120,7 +171,13 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm-10 offset-sm-2">
-                                <button type="submit" class="btn btn-outline-info px-8">更新</button>
+                                <img class="img-fluid" src="assets/img/uploads/qrcode.png" alt="" style="width: 80px;">
+                                <a class="" href=""><u>和茶福聊聊</u></a>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10 offset-sm-2">
+                                <button type="submit" class="btn btn-primary px-8">更新</button>
                             </div>
                         </div>
                     </form>
