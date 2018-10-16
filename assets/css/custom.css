@@ -184,8 +184,13 @@ a.text-line:hover {
   position: relative;
   z-index: 1100; }
 
+.nav-tabs .nav-link {
+  margin-top: 2px; }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:active, .nav-tabs .nav-link:focus {
   background-color: rgba(255, 255, 255, 0.9); }
+.nav-tabs .nav-link.active {
+  margin-top: 0;
+  border-top: 3px solid #85af4b; }
 
 .custom-select {
   -moz-appearance: window;
