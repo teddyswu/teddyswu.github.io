@@ -92,12 +92,10 @@
                 <div class="col-12 col-lg-8">
                     <form>
                         <div class="form-group row align-items-center">
-                            <label for="id" class="col-sm-2 col-form-label">
+                            <label for="id" class="col-sm-3 col-form-label">
                                 <img class="img-fluid rounded-circle" src="assets/img/uploads/avatar2.jpg" alt="" style="width: 50px">
                             </label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control-plaintext" id="id" value="abcdefg">
-                            </div>
+                            <div class="col-sm-10"></div>
                             <div class="col-12">
                                 <small class="form-text text-muted">
                                     * 臉書會員的照片與您的臉書相同，若欲替換照片請由臉書帳號作更新，O.Story也會一起更新哦！
@@ -105,14 +103,14 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="name" class="col-sm-2 col-form-label">全名</label>
-                            <div class="col-sm-10">
+                            <label for="name" class="col-sm-3 col-form-label">暱稱</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="name" value="" required>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email" class="col-sm-2 col-form-label">電子信箱</label>
-                            <div class="col-sm-10">
+                            <label for="email" class="col-sm-3 col-form-label">電子信箱</label>
+                            <div class="col-sm-9">
                                 <input type="email" class="form-control" id="email" value="" required>
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -125,8 +123,14 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="birthday" class="col-sm-2 col-form-label">性別</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-9 offset-sm-3">
+                                <img class="img-fluid" src="assets/img/uploads/qrcode.png" alt="" style="width: 80px;">
+                                <a class="" href=""><u>和茶福聊聊</u></a>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="birthday" class="col-sm-3 col-form-label">性別</label>
+                            <div class="col-sm-9">
                                 <div class="form-control-plaintext">
                                     <div class="custom-control custom-radio custom-control-inline">
                                         <input type="radio" id="sexMale" name="sexMale" class="custom-control-input">
@@ -140,43 +144,47 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="birthday" class="col-sm-2 col-form-label">生日</label>
-                            <div class="col-sm-10">
-                                <input type="date" class="form-control" id="birthday" value="" placeholder="請輸入生日" required>
+                            <label for="birthday" class="col-sm-3 col-form-label">生日</label>
+                            <div class="col-sm-9">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <select class="form-control">
+                                            <option>年</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control">
+                                            <option>月</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control">
+                                            <option>日</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email" class="col-sm-2 col-form-label">網址名稱</label>
-                            <div class="col-sm-10">
-                                <input type="url" class="form-control" id="urlName" value="">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-2 col-form-label">Facebook</label>
-                            <div class="col-sm-10">
+                            <label for="email" class="col-sm-3 col-form-label">個人臉書或粉專</label>
+                            <div class="col-sm-9">
                                 <input type="url" class="form-control" id="urlFB" value="" placeholder="https://facebook.com/page-name">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email" class="col-sm-2 col-form-label">網站網址</label>
-                            <div class="col-sm-10">
+                            <label for="email" class="col-sm-3 col-form-label">網站位置</label>
+                            <div class="col-sm-9">
                                 <input type="url" class="form-control" id="url" value="" placeholder="https://www.example.com">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="info" class="col-sm-2 col-form-label">個人介紹</label>
-                            <div class="col-sm-10">
+                            <label for="info" class="col-sm-3 col-form-label">個人介紹</label>
+                            <div class="col-sm-9">
                                 <textarea class="form-control" rows="5"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-sm-10 offset-sm-2">
-                                <img class="img-fluid" src="assets/img/uploads/qrcode.png" alt="" style="width: 80px;">
-                                <a class="" href=""><u>和茶福聊聊</u></a>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-10 offset-sm-2">
+                            <div class="col-sm-9 offset-sm-3">
                                 <button type="submit" class="btn btn-primary px-8">更新</button>
                             </div>
                         </div>

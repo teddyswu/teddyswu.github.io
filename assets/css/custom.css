@@ -184,6 +184,9 @@ a.text-line:hover {
   position: relative;
   z-index: 1100; }
 
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:active, .nav-tabs .nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.9); }
+
 .custom-select {
   -moz-appearance: window;
   -webkit-appearance: none; }
@@ -221,7 +224,10 @@ a.text-line:hover {
   right: 1rem;
   bottom: 1rem;
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  background: #fff; }
+.btn-top:hover, .btn-top:active, .btn-top:focus {
+  background: #85af4b; }
 
 .btn-primary {
   color: #fff; }

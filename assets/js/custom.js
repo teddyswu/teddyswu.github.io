@@ -60,6 +60,19 @@ $(function(){
     });
 });
 
+$('.btn-like').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+$('.btn-smile').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+$('.btn-meh').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+$('.btn-frown').click(function(){
+    $(this).find('i').toggleClass('far fas')
+});
+
 var Sticky = new hcSticky('.sidebar', {
     stickTo: '.content',
     innerTop: -80,
@@ -74,15 +87,4 @@ $('#menu').hcSticky({
 //    top: 0
   });
 
-$('.btn-like').click(function(){
-    $(this).find('i').toggleClass('far fas')
-});
-$('.btn-smile').click(function(){
-    $(this).find('i').toggleClass('far fas')
-});
-$('.btn-meh').click(function(){
-    $(this).find('i').toggleClass('far fas')
-});
-$('.btn-frown').click(function(){
-    $(this).find('i').toggleClass('far fas')
-});
+
