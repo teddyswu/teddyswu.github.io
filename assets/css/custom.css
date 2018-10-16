@@ -65,16 +65,16 @@ a.text-line:hover {
   height: 100%;
   position: relative; }
 
-.item, .post .btn-info {
+.item, .post .btn-info, .border-hover {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
-.item:hover, .item:active, .item:focus, .post .btn-info:hover, .post .btn-info:active, .post .btn-info:focus {
+.item:hover, .item:active, .item:focus, .post .btn-info:hover, .post .btn-info:active, .post .btn-info:focus, .border-hover:hover, .border-hover:active, .border-hover:focus {
   -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
-.item:hover div.btn, .item:active div.btn, .item:focus div.btn, .post .btn-info:hover div.btn, .post .btn-info:active div.btn, .post .btn-info:focus div.btn {
+.item:hover div.btn, .item:active div.btn, .item:focus div.btn, .post .btn-info:hover div.btn, .post .btn-info:active div.btn, .post .btn-info:focus div.btn, .border-hover:hover div.btn, .border-hover:active div.btn, .border-hover:focus div.btn {
   background-color: #85af4b;
   color: #fff; }
 
