@@ -82,7 +82,7 @@ a.text-line:hover {
   -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
-.item:hover div.btn, .item:active div.btn, .item:focus div.btn, .post .btn-info:hover div.btn, .post .btn-info:active div.btn, .post .btn-info:focus div.btn, .border-hover:hover div.btn, .border-hover:active div.btn, .border-hover:focus div.btn {
+.item:hover div.btn-primary, .item:hover div.btn-outline-primary, .item:active div.btn-primary, .item:active div.btn-outline-primary, .item:focus div.btn-primary, .item:focus div.btn-outline-primary, .post .btn-info:hover div.btn-primary, .post .btn-info:hover div.btn-outline-primary, .post .btn-info:active div.btn-primary, .post .btn-info:active div.btn-outline-primary, .post .btn-info:focus div.btn-primary, .post .btn-info:focus div.btn-outline-primary, .border-hover:hover div.btn-primary, .border-hover:hover div.btn-outline-primary, .border-hover:active div.btn-primary, .border-hover:active div.btn-outline-primary, .border-hover:focus div.btn-primary, .border-hover:focus div.btn-outline-primary {
   background-color: #85af4b;
   color: #fff; }
 
@@ -91,7 +91,25 @@ a.text-line:hover {
 .item .badge {
   position: absolute;
   top: .25rem;
-  left: .25rem; }
+  left: -.25rem;
+  font-size: 1rem; }
+.item .badge:after {
+  position: absolute;
+  right: -9px;
+  top: 0;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 0 12px 12px; }
+.item .badge.badge-primary:after {
+  border-color: transparent transparent transparent #85af4b; }
+.item .badge.badge-danger:after {
+  border-color: transparent transparent transparent #dc3545; }
+.item .badge.badge-warning {
+  color: #845b04; }
+.item .badge.badge-warning:after {
+  border-color: transparent transparent transparent #fac75a; }
 .item .item-title, .item .item-desc {
   display: block;
   text-overflow: ellipsis;
@@ -105,6 +123,10 @@ a.text-line:hover {
   -webkit-line-clamp: 3;
   line-height: 1.5;
   height: 3.5rem; }
+.item.item-close {
+  cursor: default; }
+.item.item-close .btn {
+  cursor: default; }
 
 .font-small {
   font-size: 0.8rem; }
