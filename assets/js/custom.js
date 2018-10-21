@@ -11,6 +11,7 @@
 //setTimeout( function() { scroll(0,0); }, 1);
 
 $(function(){
+    $('[data-toggle="tooltip"]').tooltip();
 
     $('.anchor').click(function(){
 		$('html, body').animate({
@@ -61,16 +62,16 @@ $(function(){
 });
 
 $('.btn-like').click(function(){
-    $(this).find('i').toggleClass('far fas')
+    $(this).find('.fa-fw').toggleClass('far fas')
 });
 $('.btn-smile').click(function(){
-    $(this).find('i').toggleClass('far fas')
+    $(this).find('.fa-fw').toggleClass('far fas')
 });
 $('.btn-meh').click(function(){
-    $(this).find('i').toggleClass('far fas')
+    $(this).find('.fa-fw').toggleClass('far fas')
 });
 $('.btn-frown').click(function(){
-    $(this).find('i').toggleClass('far fas')
+    $(this).find('.fa-fw').toggleClass('far fas')
 });
 
 var Sticky = new hcSticky('.sidebar', {
