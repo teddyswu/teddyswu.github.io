@@ -22,6 +22,14 @@ a.text-fb:hover {
 a.text-line:hover {
   color: #008600 !important; }
 
+.bg-404 {
+  background: url(../img/uploads/bg-404.jpg) center center no-repeat;
+  background-size: cover; }
+
+.bg-login {
+  background: url(../img/uploads/bg-login.jpg) center center no-repeat;
+  background-size: cover; }
+
 @media (max-width: 991.98px) {
   .navbar-brand img {
     max-width: 150px; } }
@@ -587,6 +595,7 @@ input[type="text"], input[type="email"], input[type="date"] {
 .slick-prev:before, .slick-next:before {
   font-family: "FontAwesome";
   font-size: 2.5rem;
+  font-weight: 900;
   line-height: 1;
   color: #fff;
   opacity: 0.75;
