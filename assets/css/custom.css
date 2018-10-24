@@ -87,6 +87,7 @@ a.text-line:hover {
   color: #fff; }
 
 .item {
+  display: block;
   background: #f8f9fa; }
 .item .badge {
   position: absolute;
@@ -128,6 +129,14 @@ a.text-line:hover {
 .item.item-close .btn {
   cursor: default; }
 
+@media (max-width: 991.98px) {
+  .article {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .article .post {
+    margin: 5px 0 !important;
+    padding-left: 5px;
+    padding-right: 5px; } }
 .font-small {
   font-size: 0.8rem; }
 
@@ -216,10 +225,9 @@ a.text-line:hover {
 
 .nav-tabs .nav-link {
   margin-top: 2px; }
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:active, .nav-tabs .nav-link:focus {
-  background-color: rgba(255, 255, 255, 0.9); }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:active, .nav-tabs .nav-link.active {
   margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
   border-top: 3px solid #85af4b; }
 
 .custom-select {
