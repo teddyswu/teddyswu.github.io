@@ -88,7 +88,16 @@
                         </div>
                         <div class="form-group">
                             <label>預計達成時間</label>
-                            <input type="date" class="form-control">
+                            <div class="form-row input-daterange" id="datepicker">
+                                <div class="col">
+                                    <small class="text-muted">開始日期</small>
+                                    <input type="text" class="form-control" name="start" />
+                                </div>
+                                <div class="col">
+                                    <small class="text-muted">結束日期</small>
+                                    <input type="text" class="form-control" name="end" />
+                                </div>
+                            </div>
                         </div>
                         <a class="btn btn-primary mr-2" href="project-create-done.html">送出</a>
                         <a class="btn btn-outline-secondary" href="">返回提案紀錄</a>
@@ -132,6 +141,8 @@
 
     <!-- global -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/vendor/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
     <script src="assets/js/vendor/jquery.pushy.min.js"></script>
     <script src="assets/js/vendor/jquery.slick.min.js"></script>
     <script src="assets/js/vendor/jquery.hc-sticky.min.js"></script>
