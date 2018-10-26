@@ -137,6 +137,77 @@ a.text-line:hover {
     margin: 5px 0 !important;
     padding-left: 5px;
     padding-right: 5px; } }
+.card-headlines {
+  border: 0; }
+.card-headlines .card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff; }
+@media (max-width: 1199.98px) {
+  .card-headlines .h1 {
+    font-size: 1.75rem; } }
+@media (max-width: 991.98px) {
+  .card-headlines .h1 {
+    font-size: 1.25rem; } }
+
+.rank-face {
+  position: relative;
+  display: block; }
+.rank-face img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+.rank-face .award {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 66px;
+  font-size: 2.5rem;
+  color: #eae1d0; }
+.rank-face .award-1 {
+  background-image: url("../img/ui/icon-award-1.png"); }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
+  .rank-face .award-1 {
+    background-image: url("../img/ui/icon-award-1@2x.png");
+    -moz-background-size: 65px, 66px;
+    -o-background-size: 65px, 66px;
+    -webkit-background-size: 65px, 66px;
+    background-size: 65px, 66px; } }
+.rank-face .award-2 {
+  background-image: url("../img/ui/icon-award-2.png"); }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
+  .rank-face .award-2 {
+    background-image: url("../img/ui/icon-award-2@2x.png");
+    -moz-background-size: 65px, 66px;
+    -o-background-size: 65px, 66px;
+    -webkit-background-size: 65px, 66px;
+    background-size: 65px, 66px; } }
+.rank-face .award-3 {
+  background-image: url("../img/ui/icon-award-3.png"); }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
+  .rank-face .award-3 {
+    background-image: url("../img/ui/icon-award-3@2x.png");
+    -moz-background-size: 65px, 66px;
+    -o-background-size: 65px, 66px;
+    -webkit-background-size: 65px, 66px;
+    background-size: 65px, 66px; } }
+.rank-face .award-other {
+  background-image: url("../img/ui/icon-award-other.png"); }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
+  .rank-face .award-other {
+    background-image: url("../img/ui/icon-award-other@2x.png");
+    -moz-background-size: 65px, 66px;
+    -o-background-size: 65px, 66px;
+    -webkit-background-size: 65px, 66px;
+    background-size: 65px, 66px; } }
+
 .font-small {
   font-size: 0.8rem; }
 
@@ -230,6 +301,17 @@ a.text-line:hover {
   background-color: rgba(255, 255, 255, 0.9);
   border-top: 3px solid #85af4b; }
 
+.nav-index .nav-item {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+.nav-index .nav-link {
+  padding: .25rem 0;
+  color: #343a40;
+  border-bottom: 2px solid transparent; }
+.nav-index .nav-link:hover, .nav-index .nav-link:active, .nav-index .nav-link:focus, .nav-index .nav-link.active {
+  color: #85af4b;
+  border-bottom-color: #85af4b; }
+
 .custom-select {
   -moz-appearance: window;
   -webkit-appearance: none; }
@@ -308,6 +390,25 @@ a.text-line:hover {
   width: 100%; }
 .btn-group-justified .btn .dropdown-menu, .btn-group-justified .btn-group .dropdown-menu {
   left: auto; }
+
+.btn-img {
+  display: block;
+  overflow: hidden;
+  background-color: #000; }
+.btn-img img {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+.btn-img:hover img, .btn-img:active img, .btn-img:focus img {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: .8; }
+
+.btn-story:hover img, .btn-story:active img, .btn-story:focus img {
+  opacity: .8; }
 
 [class^="icon-"], [class*="icon-"] {
   position: relative;

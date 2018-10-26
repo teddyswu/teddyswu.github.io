@@ -59,6 +59,10 @@ $(function(){
         dots: true,
 //        autoplay: true,
     });
+        $('.slider-headlines').slick({
+        dots: true,
+//        autoplay: true,
+    });
 });
 
 $('.btn-like').click(function(){
