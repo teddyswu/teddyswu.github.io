@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="">
+                        <div class="nav-responsive">
                             <ul class="nav nav-tabs nav-justified border-bottom-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#tab-create1" role="tab">提案設定</a>
@@ -75,12 +75,11 @@
             </div>
         </div>
 
-        <div class="container tab-content">
+        <form class="container tab-content">
             <div class="tab-pane fade show active" id="tab-create1">
-                <div class="alert alert-warning font-small">
+                <div class="border rounded mb-3 p-3 font-small">
                     設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案
                 </div>
-                <form>
                     <div class="form-group">
                         <label>資金目標</label>
                         <div class="input-group">
@@ -163,14 +162,12 @@
                             請輸入與提案相關的FB粉專，請貼上完整網址。
                         </div>
                     </div>
-                </form>
             </div>
 
             <div class="tab-pane fade" id="tab-create2">
-                <div class="alert alert-warning font-small">
-                    撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案撰寫提醒文案
+                <div class="border rounded mb-3 p-3 font-small">
+                    設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案
                 </div>
-                <form>
                     <div class="form-group">
                         <label>提案內容</label>
                         <textarea class="form-control" rows="4"></textarea>
@@ -205,14 +202,12 @@
                             </ol>
                         </div>
                     </div>
-                </form>
             </div>
 
             <div class="tab-pane fade" id="tab-create3">
-                <div class="alert alert-warning font-small">
-                    提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案提案人資料提醒文案
+                <div class="border rounded mb-3 p-3 font-small">
+                    設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案
                 </div>
-                <form>
                     <div class="form-group">
                         <label>提案者姓名</label>
                         <input type="text" class="form-control" value="" placeholder="">
@@ -255,14 +250,12 @@
                             不超過XX字，最長不超過xx字
                         </div>
                     </div>
-                </form>
             </div>
 
             <div class="tab-pane fade" id="tab-create4">
-                <div class="alert alert-warning font-small">
-                    小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊提醒文案小農隊
+                <div class="border rounded mb-3 p-3 font-small">
+                    設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案設定提醒文案
                 </div>
-                <form>
                     <div class="form-row mb-6">
                         <div class="col-12 col-lg-4 my-2">
                             <select class="custom-select">
@@ -313,24 +306,50 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck-agree">
-                            <label class="custom-control-label" for="customCheck-agree">
-                                我已同意<a href="" target="_blank"><u>網站使用條款</u></a> 及 <a href="project-contract.html" target="_blank"><u>提案合約書</u></a>
-                            </label>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary px-10" href="project-create-done.html">儲存</a>
-                    <a class="btn btn-outline-secondary px-10" href="">取消</a>
-                </form>
             </div>
+        </form>
+
+        <div class="container">
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck-agree">
+                    <label class="custom-control-label" for="customCheck-agree">
+                        我已同意<a href="" target="_blank"><u>網站使用條款</u></a> 及 <a href="project-contract.html" target="_blank"><u>提案合約書</u></a>
+                    </label>
+                </div>
+            </div>
+            <a class="btn btn-primary px-10" href="" data-toggle="modal" data-target="#modal-check">儲存與檢查</a>
+<!--            <a class="btn btn-primary px-10" href="project-create-done.html">儲存與檢查</a>-->
+            <a class="btn btn-outline-secondary px-10" href="">取消</a>
         </div>
     </div>
 
     <!-- module: global-footer -->
     <div id="global-footer"></div>
     <!-- module: ./global-footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-check" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title h5">請檢查下列問題</div>
+                    <a class="text-dark" data-dismiss="modal" href="">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <p>請把以下的欄位修正後再次儲存</p>
+                    <ul class="pl-4">
+                        <li>內容摘要</li>
+                    </ul>
+                    <div class="text-center mt-10 mb-6">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">我知道了</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- global -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>

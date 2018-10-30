@@ -89,30 +89,6 @@ a.text-line:hover {
 .item {
   display: block;
   background: #f8f9fa; }
-.item .badge {
-  position: absolute;
-  top: .25rem;
-  left: -.25rem;
-  font-size: 1rem; }
-.item .badge:after {
-  position: absolute;
-  right: -9px;
-  top: 0;
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 0 12px 12px; }
-.item .badge.badge-primary:after {
-  border-color: transparent transparent transparent #85af4b; }
-.item .badge.badge-danger:after {
-  border-color: transparent transparent transparent #dc3545; }
-.item .badge.badge-info:after {
-  border-color: transparent transparent transparent #4a99d6; }
-.item .badge.badge-warning {
-  color: #845b04; }
-.item .badge.badge-warning:after {
-  border-color: transparent transparent transparent #fac75a; }
 .item .item-title, .item .item-desc {
   display: block;
   text-overflow: ellipsis;
@@ -130,6 +106,32 @@ a.text-line:hover {
   cursor: default; }
 .item.item-close .btn {
   cursor: default; }
+
+.item .badge, .item-media .badge {
+  position: absolute;
+  top: .25rem;
+  left: -.25rem;
+  z-index: 10;
+  font-size: 1rem; }
+.item .badge:after, .item-media .badge:after {
+  position: absolute;
+  right: -9px;
+  top: 0;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 0 12px 12px; }
+.item .badge.badge-primary:after, .item-media .badge.badge-primary:after {
+  border-color: transparent transparent transparent #85af4b; }
+.item .badge.badge-danger:after, .item-media .badge.badge-danger:after {
+  border-color: transparent transparent transparent #dc3545; }
+.item .badge.badge-info:after, .item-media .badge.badge-info:after {
+  border-color: transparent transparent transparent #4a99d6; }
+.item .badge.badge-warning, .item-media .badge.badge-warning {
+  color: #331f00; }
+.item .badge.badge-warning:after, .item-media .badge.badge-warning:after {
+  border-color: transparent transparent transparent #f90; }
 
 @media (max-width: 991.98px) {
   .article {
@@ -548,8 +550,8 @@ input[type="text"], input[type="email"], input[type="date"] {
   color: #85af4b; }
 
 .badge.badge-outlined.badge-warning {
-  border-color: #fac75a;
-  color: #fac75a; }
+  border-color: #f90;
+  color: #f90; }
 
 .badge.badge-outlined.badge-info {
   border-color: #4a99d6;
@@ -562,6 +564,11 @@ input[type="text"], input[type="email"], input[type="date"] {
 .progress-md {
   height: 1.5rem;
   font-size: 1rem; }
+
+.badge-float {
+  position: absolute;
+  left: -10px;
+  top: 5px; }
 
 /*!
  * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)

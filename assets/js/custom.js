@@ -94,3 +94,4 @@ $('#menu').hcSticky({
 
 $.fn.datepicker.defaults.language = 'zh-TW';
 $('.input-daterange').datepicker({});
+$('.datepicker').datepicker();

@@ -26,11 +26,11 @@
   background-attachment: fixed;
   background-size: cover; }
 #team .box {
-  color: #533903; }
+  color: black; }
 
 #group .title {
-  color: #fac75a;
-  border-color: #fac75a; }
+  color: #f90;
+  border-color: #f90; }
 
 #qa .title {
   color: #85af4b;
