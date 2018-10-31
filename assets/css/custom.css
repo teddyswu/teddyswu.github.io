@@ -175,42 +175,84 @@ a.text-line:hover {
   height: 66px;
   font-size: 2.5rem;
   color: #eae1d0; }
+.rank-face .award-1, .rank-face .award-2, .rank-face .award-3 {
+  bottom: -10px;
+  width: 65px;
+  height: 78px; }
 .rank-face .award-1 {
   background-image: url("../img/ui/icon-award-1.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
   .rank-face .award-1 {
     background-image: url("../img/ui/icon-award-1@2x.png");
-    -moz-background-size: 65px, 66px;
-    -o-background-size: 65px, 66px;
-    -webkit-background-size: 65px, 66px;
-    background-size: 65px, 66px; } }
+    -moz-background-size: 100%, 100%;
+    -o-background-size: 100%, 100%;
+    -webkit-background-size: 100%, 100%;
+    background-size: 100%, 100%; } }
 .rank-face .award-2 {
   background-image: url("../img/ui/icon-award-2.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
   .rank-face .award-2 {
     background-image: url("../img/ui/icon-award-2@2x.png");
-    -moz-background-size: 65px, 66px;
-    -o-background-size: 65px, 66px;
-    -webkit-background-size: 65px, 66px;
-    background-size: 65px, 66px; } }
+    -moz-background-size: 100%, 100%;
+    -o-background-size: 100%, 100%;
+    -webkit-background-size: 100%, 100%;
+    background-size: 100%, 100%; } }
 .rank-face .award-3 {
   background-image: url("../img/ui/icon-award-3.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
   .rank-face .award-3 {
     background-image: url("../img/ui/icon-award-3@2x.png");
-    -moz-background-size: 65px, 66px;
-    -o-background-size: 65px, 66px;
-    -webkit-background-size: 65px, 66px;
-    background-size: 65px, 66px; } }
+    -moz-background-size: 100%, 100%;
+    -o-background-size: 100%, 100%;
+    -webkit-background-size: 100%, 100%;
+    background-size: 100%, 100%; } }
 .rank-face .award-other {
   background-image: url("../img/ui/icon-award-other.png"); }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 1.25dppx), only screen and (min-resolution: 2dppx) {
   .rank-face .award-other {
     background-image: url("../img/ui/icon-award-other@2x.png");
-    -moz-background-size: 65px, 66px;
-    -o-background-size: 65px, 66px;
-    -webkit-background-size: 65px, 66px;
-    background-size: 65px, 66px; } }
+    -moz-background-size: 100%, 100%;
+    -o-background-size: 100%, 100%;
+    -webkit-background-size: 100%, 100%;
+    background-size: 100%, 100%; } }
+@media (max-width: 991.98px) {
+  .rank-face .award {
+    background-size: cover; }
+  .rank-face .award-1, .rank-face .award-2, .rank-face .award-3 {
+    width: 40px;
+    height: 48px; }
+  .rank-face .award-other {
+    width: 40px;
+    height: 41px;
+    font-size: 1rem; } }
+
+.card-wall {
+  display: block;
+  overflow: hidden;
+  background-color: #000;
+  border: 0;
+  border-radius: 0;
+  color: #fff; }
+.card-wall img {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+.card-wall .card-img-overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+.card-wall:hover, .card-wall:active, .card-wall:focus {
+  color: #fff; }
+.card-wall:hover .card-img-overlay, .card-wall:active .card-img-overlay, .card-wall:focus .card-img-overlay {
+  display: flex; }
+.card-wall:hover img, .card-wall:active img, .card-wall:focus img {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: .6; }
 
 @media (max-width: 991.98px) {
   .table-rwd thead {
@@ -269,6 +311,9 @@ a.text-line:hover {
 .text-black {
   color: #000; }
 
+@media (max-width: 991.98px) {
+  .h1 {
+    font-size: 2rem; } }
 .nav-info .nav-item {
   border-left: 1px solid #ced4da; }
 .nav-info .nav-item .nav-link {
@@ -421,22 +466,6 @@ a.text-line:hover {
   width: 100%; }
 .btn-group-justified .btn .dropdown-menu, .btn-group-justified .btn-group .dropdown-menu {
   left: auto; }
-
-.btn-img {
-  display: block;
-  overflow: hidden;
-  background-color: #000; }
-.btn-img img {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-.btn-img:hover img, .btn-img:active img, .btn-img:focus img {
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  opacity: .8; }
 
 .btn-story:hover img, .btn-story:active img, .btn-story:focus img {
   opacity: .8; }
