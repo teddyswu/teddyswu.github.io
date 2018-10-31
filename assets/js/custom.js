@@ -125,11 +125,11 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('#support-action').removeClass('scroll-up').addClass('scroll-down');
+        $('#support-action').removeClass('scroll-down').addClass('scroll-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('#support-action').removeClass('scroll-down').addClass('scroll-up');
+            $('#support-action').removeClass('scroll-up').addClass('scroll-down');
         }
     }
 

@@ -55,7 +55,7 @@ a.text-line:hover {
 
 .comment {
   overflow: auto;
-  max-height: 600px; }
+  max-height: 560px; }
 @media (max-width: 991.98px) {
   .comment {
     max-height: none; } }
@@ -1291,7 +1291,7 @@ input[type="text"], input[type="email"], input[type="date"] {
   opacity: 0.25; }
 .slick-prev:before, .slick-next:before {
   font-family: "FontAwesome";
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 1;
   color: #fff;
@@ -1305,9 +1305,9 @@ input[type="text"], input[type="email"], input[type="date"] {
   left: auto;
   right: 5px; }
 .slick-prev:before {
-  content: "‹"; }
+  content: ""; }
 [dir="rtl"] .slick-prev:before {
-  content: "›"; }
+  content: ""; }
 
 .slick-next {
   right: 5px; }
@@ -1315,9 +1315,9 @@ input[type="text"], input[type="email"], input[type="date"] {
   left: 5px;
   right: auto; }
 .slick-next:before {
-  content: "›"; }
+  content: ""; }
 [dir="rtl"] .slick-next:before {
-  content: "‹"; }
+  content: ""; }
 
 /* Dots */
 .slick-dots {
