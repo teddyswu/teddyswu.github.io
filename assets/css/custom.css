@@ -263,9 +263,9 @@ a.text-line:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 #support-action.scroll-up {
-  bottom: -100px; }
-#support-action.scroll-down {
   bottom: 0; }
+#support-action.scroll-down {
+  bottom: -100px; }
 
 @media (max-width: 991.98px) {
   .table-rwd thead {
