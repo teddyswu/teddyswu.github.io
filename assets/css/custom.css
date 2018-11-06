@@ -30,6 +30,11 @@ a.text-line:hover {
   background: url(../img/uploads/bg-login.jpg) center 20% no-repeat;
   background-size: cover; }
 
+#intro {
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
 @media (max-width: 991.98px) {
   .navbar-brand img {
     max-width: 150px; } }
