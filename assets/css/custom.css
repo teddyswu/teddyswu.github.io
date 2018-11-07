@@ -23,7 +23,6 @@ a.text-line:hover {
   color: #008600 !important; }
 
 .bg-404 {
-  background: url(../img/uploads/bg-404.jpg) center center no-repeat;
   background-size: cover; }
 
 .bg-login {
