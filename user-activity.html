@@ -46,7 +46,7 @@
                 <div class="col-12">
                     <div class="text-center text-success mb-7">
                         <h1 class="font-weight-bold">友善會員</h1>
-                        <div class="h3">參與紀錄</div>
+                        <div class="h3">參與提案紀錄</div>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                                 <a class="nav-link" href="user-print.html">列印工作紀錄</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="user-activity.html">參與紀錄</a>
+                                <a class="nav-link active" href="user-activity.html">參與提案紀錄</a>
                             </li>
                         </ul>
                         </div>
@@ -71,46 +71,126 @@
         </div>
         <div class="container">
             <div class="row">
-                        <div class="col-12">
+                <div class="col-12">
 
-                            <!-- 草稿 -->
+                    <!-- 進行中 -->
+                    <div class="border item mb-4">
+                        <a class="row no-gutters" href="project-detail.html">
+                            <div class="col-12 col-lg-5">
+                                <div class="d-block position-relative">
+                                    <span class="badge badge-primary">進行中</span>
+                                    <img class="img-fluid text-center" src="assets/img/uploads/project-md1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 p-2">
+                                <div class="font-small text-muted">
+                                    2018-09-01 ~ 2018-10-01
+                                </div>
+                                <div class="text-black text-row-1">
+                                    有機日日茶·抹茶粉“NODOKA”有機日日茶·抹茶粉“NODOKA”有機日日茶·抹茶粉“NODOKA”
+                                </div>
+                                <hr class="my-3">
+                                <div class="text-muted">
+                                    預計收益：$300,000<br>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                    目前達成：$50,000<br>
+                                    支持人數：10 人<br>
+                                    剩餘時間：5天
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bg-white border-top p-4">
+                            <div class="row align-items-center">
+                                <div class="col-12 text-center text-lg-left">
+                                    <div class="text-primary my-1 my-lg-0">
+                                        <i class="fas fa-fw fa-tasks"></i> 您參與的提案正在進行中，如對提案內容有任何問題，請與提案人聯繫。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 已結束成功 -->
                             <div class="border item mb-4">
-                                <div class="row no-gutters bg-light">
+                                <a class="row no-gutters" href="project-detail.html">
                                     <div class="col-12 col-lg-5">
-                                        <a class="d-block position-relative" href="project-detail.html">
-                                            <span class="badge badge-warning">草稿</span>
-                                            <img class="img-fluid text-center" src="assets/img/uploads/project-md1.jpg" alt="">
-                                        </a>
+                                        <div class="d-block position-relative">
+                                            <span class="badge badge-danger">已結束</span>
+                                            <img class="img-fluid text-center" src="assets/img/uploads/project-md2.jpg" alt="">
+                                        </div>
                                     </div>
                                     <div class="col-12 col-lg-7 p-2">
                                         <div class="font-small text-muted">
-                                            2018/09/05 20:04
+                                            2018-01-10 ~2018-01-20
                                         </div>
-                                        <a class="text-black text-row-1" href="project-detail.html">
+                                        <div class="text-black text-row-1">
                                             有機日日茶·抹茶粉“NODOKA”有機日日茶·抹茶粉“NODOKA”有機日日茶·抹茶粉“NODOKA”
-                                        </a>
+                                        </div>
                                         <hr class="my-3">
                                         <div class="text-muted">
-                                            預計收益：$300,000<br>
+                                            資金目標：$300,000<br>
                                             <div class="progress">
                                                 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                             </div>
                                             目前達成：$50,000<br>
                                             支持人數：10 人<br>
-                                            剩餘時間：5天
+                                            剩餘時間：已結束
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                                 <div class="bg-white border-top p-4">
                                     <div class="row align-items-center">
-                                        <div class="col-12 col-lg my-1 my-lg-0 text-center text-lg-right">
-                                            <a class="btn btn-sm btn-outline-primary" href="">查看詳細</a>
+                                        <div class="col-12 text-center text-lg-left">
+                                            <div class="text-danger my-1 my-lg-0">
+                                                <i class="fas fa-fw fa-ban"></i> 您的提案已結束，很可惜提案未成功。
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
+                            <!-- 已結束未成功 -->
+                            <div class="border item mb-4">
+                                <a class="row no-gutters" href="project-detail.html">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="d-block position-relative">
+                                            <span class="badge badge-danger">已結束</span>
+                                            <img class="img-fluid text-center" src="assets/img/uploads/project-md3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-7 p-2">
+                                        <div class="font-small text-muted">
+                                            2018-09-10 ~ 2018-11-10
+                                        </div>
+                                        <div class="text-black text-row-1">
+                                            有機日日茶·抹茶粉“NODOKA”有機日日茶·抹茶粉“NODOKA”有機日日茶·抹茶粉“NODOKA”
+                                        </div>
+                                        <hr class="my-3">
+                                        <div class="text-muted">
+                                            資金目標：$300,000<br>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 125%;" aria-valuenow="125" aria-valuemin="0" aria-valuemax="100">125%</div>
+                                            </div>
+                                            目前達成：$50,000<br>
+                                            支持人數：10 人<br>
+                                            剩餘時間：已結束
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="bg-white border-top p-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 text-center text-lg-left">
+                                            <div class="text-success my-1 my-lg-0">
+                                                <i class="fas fa-fw fa-check"></i> 您的提案已結束，恭喜您的提案支持成功！
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
             </div>
             <nav class="mt-4">
                 <ul class="pagination justify-content-center">
