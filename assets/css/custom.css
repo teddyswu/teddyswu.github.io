@@ -331,6 +331,22 @@ a.text-line:hover {
 @media (max-width: 991.98px) {
   .h1 {
     font-size: 2rem; } }
+.filter-grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+
+.filter-sepia {
+  -webkit-filter: sepia(1);
+  filter: sepia(1); }
+
+.filter-saturate {
+  -webkit-filter: saturate(0.5);
+  filter: saturate(0.5); }
+
+.filter-contrast {
+  -webkit-filter: contrast(2);
+  filter: contrast(2); }
+
 .nav-info .nav-item {
   border-left: 1px solid #ced4da; }
 .nav-info .nav-item .nav-link {
