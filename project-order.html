@@ -1,0 +1,263 @@
+<!doctype html>
+<html  lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>友機農夫</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+    <!--fb og-->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://store.sogi.com.tw/">
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/assets/img/og-image.jpg" >
+    <meta content="zh_TW" property="og:locale">
+    <link rel="image_src" href="/assets/img/og-image.jpg" >
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+</head>
+
+<body id="top">
+
+    <nav class="pushy pushy-left bg-white">
+        <!-- module: nav-mobile -->
+        <div id="nav-mobile"></div>
+        <!-- module: ./nav-mobile -->
+    </nav>
+
+    <div class="site-overlay"></div>
+
+    <!-- module: global-header -->
+    <div id="global-header"></div>
+    <!-- ./module: global-header -->
+
+    <div id="main" class="push py-14 mt-10 mt-lg-12">
+
+        <div class="container mb-3">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-10">
+                        <div class="h3 text-success">有機日日茶·抹茶粉“NODOKA”</div>
+                        <a class="font-small" href="">
+                            <i class="far fa-user"></i> steking
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 order-last order-lg-first">
+                    <form>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="formPay">付款方式</label>
+                                    <div class="form-row">
+                                        <div class="col-12 col-sm-6 mb-2">
+                                            <div class="custom-control custom-radio custom-button">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" onClick="settip('可用卡別：VISA／MASTERCARD／JCB／銀聯卡，無手續費產生')">
+                                                <label class="custom-control-label" for="customRadio1">信用卡付款</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mb-2">
+                                            <div class="custom-control custom-radio custom-button">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" onClick="settip('Web ATM 轉帳 / 實體 ATM 繳款，轉帳或繳款時，非金流特定銀行將產生 10 元手續費')">
+                                                <label class="custom-control-label" for="customRadio2">ATM 機器轉帳或銀行臨櫃繳款</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 mb-2">
+                                            <div class="custom-control custom-radio custom-button">
+                                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" onClick="settip('7-11／全家／萊爾富／OK商店，含 ＄35 新台幣超商繳款手續費')">
+                                                <label class="custom-control-label" for="customRadio3">超商付款</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <small class="form-text text-muted" id="paytip"></small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>支持金額</label>
+                                    <input type="text" readonly class="form-control-plaintext" value="10000">
+                                </div>
+                                <div class="form-group">
+                                    <label>我願意提供更多支持</label>
+                                    <input type="number" class="form-control" value="" placeholder="請輸入金額">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="formName" class="d-flex justify-content-between">
+                                        收件人
+                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-sm fa-question-circle"></i>
+                                        </span>
+                                    </label>
+                                    <input type="text" class="form-control" id="formName" value="" placeholder="請輸入姓名" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formCountry" class="d-flex justify-content-between">
+                                        國家
+                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-sm fa-question-circle"></i>
+                                        </span>
+                                    </label>
+                                    <select class="custom-select" id="formCountry">
+                                        <option>台灣</option>
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-10">
+                                        <label for="formAddress" class="d-flex justify-content-between">
+                                            地址
+                                        </label>
+                                        <input type="text" class="form-control" id="formAddress" value="" placeholder="請輸入地址" required>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="formNum" class="d-flex justify-content-between">
+                                            郵遞區號
+                                            <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                            <i class="far fa-sm fa-question-circle"></i>
+                                            </span>
+                                        </label>
+                                        <input type="text" class="form-control" id="formNum" value="" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formPhone" class="d-flex justify-content-between">
+                                        聯絡電話
+                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-sm fa-question-circle"></i>
+                                        </span>
+                                    </label>
+                                    <input type="text" class="form-control" id="formPhone" value="" placeholder="請輸入電話" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formMail" class="d-flex justify-content-between">
+                                        聯絡信箱
+                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-sm fa-question-circle"></i>
+                                        </span>
+                                    </label>
+                                    <input type="email" class="form-control" id="formMail" value="" placeholder="請輸入信箱" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formNote" class="d-flex justify-content-between">
+                                        備註
+                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                        <i class="far fa-sm fa-question-circle"></i>
+                                        </span>
+                                    </label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>支持注意事項</label>
+                                    <small class="form-text text-muted">
+
+                                    </small>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">
+                                            我已同意<a href="" target="_blank"><u>網站使用條款</u></a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">
+                                            匿名支持<br><small class="text-muted">不顯示在啦啦隊與公開的會員資料</small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-primary" href="project-order-done.html">立即付款支持</a>
+
+                        <div class="alert alert-secondary mt-3">
+                            當提案達目標金額100000元時，將進行結算。則10月31日23:00之前若沒有達到100000元的目標金額，將不進行結算，您所支持的金額將獲得退款，並會扣除手續費用。
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-4 mb-lg-0 mb-5">
+                    <div class="mb-3">
+                        <div class="h5 font-weight-bold">
+                            <i class="far fa-check-square"></i> 您支持的回饋項目
+                        </div>
+                    </div>
+                    <div class="item d-block mb-6">
+                        <div class="d-block position-relative text-center">
+                            <img class="img-fluid" src="assets/img/uploads/project-md2.jpg" alt="">
+                        </div>
+                        <div class="p-2">
+                            <div class="text-black">
+                                回饋禮品組
+                            </div>
+                            <div class="text-danger font-weight-bold">$10,800</div>
+                            <div class="text-muted mb-2">
+                                <small>
+                                    <div class="text-row-2">限量前50位 回饋茶包組</div>
+                                    <i class="fas fa-fw fa-check"></i> 剩餘數量: 39<br>
+                                    <i class="fas fa-fw fa-user"></i> 支持者 : 11<br>
+                                    <i class="fas fa-fw fa-truck"></i> 預計送達 : 2018年12月
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-outline-primary btn-block" href="project-rewards.html">更改回饋</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- module: global-footer -->
+    <div id="global-footer"></div>
+    <!-- module: ./global-footer -->
+
+    <!-- global -->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/vendor/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
+    <script src="assets/js/vendor/jquery.pushy.min.js"></script>
+    <script src="assets/js/vendor/jquery.slick.min.js"></script>
+    <script src="assets/js/vendor/jquery.hc-sticky.min.js"></script>
+<!--    <script src="assets/js/vendor/infinite-scroll.pkgd.min.js"></script>-->
+    <script src="assets/js/custom.js"></script>
+    <div id="fb-root"></div>
+
+    <!-- module include -->
+    <script src="assets/js/function/module.js"></script>
+
+    <!-- single -->
+    <script>
+        function settip(setting) {
+            myOption = setting;
+            document.getElementById("paytip").innerHTML = myOption;
+        }
+    </script>
+
+</body>
+</html>
+
