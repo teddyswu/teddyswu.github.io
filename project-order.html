@@ -64,7 +64,13 @@
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="formPay">付款方式</label>
+                                    <label for="formPay">支付方式說明</label>
+                                    <ul class="pl-4">
+                                        <li>信用卡付款：可用卡別：VISA／MASTERCARD／JCB／銀聯，不接受國外信用卡交易，無手續費用產生。</li>
+                                        <li>網路 ATM (晶片讀卡機) 或實體 ATM 及網銀：轉帳付款時，非金流特定銀行將產生 15 元手續費。</li>
+                                        <li>超商付款：超商條碼/代碼付款不需支付手續費，付款期限為 7 天，請務必於期限內進行付款。</li>
+                                    </ul>
+<!--
                                     <div class="form-row">
                                         <div class="col-12 col-sm-6 mb-2">
                                             <div class="custom-control custom-radio custom-button">
@@ -86,6 +92,7 @@
                                         </div>
                                     </div>
                                     <small class="form-text text-muted" id="paytip"></small>
+-->
                                 </div>
                             </div>
                         </div>
@@ -106,80 +113,84 @@
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">使用會員資料的姓名、電子信箱、地址及手機號碼</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="formName" class="d-flex justify-content-between">
                                         收件人
+<!--
                                         <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                                         <i class="far fa-sm fa-question-circle"></i>
                                         </span>
+-->
                                     </label>
-                                    <input type="text" class="form-control" id="formName" value="" placeholder="請輸入姓名" required>
+                                    <input type="text" class="form-control" id="formName" value="" placeholder="必填，請填寫真實姓名，若不正確可能造成投遞失敗。" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="formCountry" class="d-flex justify-content-between">
                                         國家
-                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                        <i class="far fa-sm fa-question-circle"></i>
-                                        </span>
                                     </label>
                                     <select class="custom-select" id="formCountry">
                                         <option>台灣</option>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <select class="form-control">
+                                                <option>縣市</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-control">
+                                                <option>鄉鎮市區</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-10">
                                         <label for="formAddress" class="d-flex justify-content-between">
                                             地址
                                         </label>
-                                        <input type="text" class="form-control" id="formAddress" value="" placeholder="請輸入地址" required>
+                                        <input type="text" class="form-control" id="formAddress" value="" placeholder="必填，請填寫完整地址，若不完整可能造成投遞失敗。" required>
                                     </div>
                                     <div class="form-group col-md-2">
                                         <label for="formNum" class="d-flex justify-content-between">
                                             郵遞區號
-                                            <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                            <i class="far fa-sm fa-question-circle"></i>
-                                            </span>
                                         </label>
                                         <input type="text" class="form-control" id="formNum" value="" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="formPhone" class="d-flex justify-content-between">
-                                        聯絡電話
-                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                        <i class="far fa-sm fa-question-circle"></i>
-                                        </span>
+                                        手機號碼
                                     </label>
-                                    <input type="text" class="form-control" id="formPhone" value="" placeholder="請輸入電話" required>
+                                    <input type="text" class="form-control" id="formPhone" value="" placeholder="手機號碼 / 必填，請填寫正確手機號碼，以利提案人與您聯繫和包裹之查詢領取。" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="formMail" class="d-flex justify-content-between">
                                         聯絡信箱
-                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                        <i class="far fa-sm fa-question-circle"></i>
-                                        </span>
                                     </label>
-                                    <input type="email" class="form-control" id="formMail" value="" placeholder="請輸入信箱" required>
+                                    <input type="email" class="form-control" id="formMail" value="" placeholder="必填，請填寫常用的電子信箱，以利提案人與您聯繫。" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="formNote" class="d-flex justify-content-between">
                                         備註
-                                        <span class="text-muted" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                                        <i class="far fa-sm fa-question-circle"></i>
-                                        </span>
                                     </label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" placeholder="可不填，若有其他需求都可以填寫在這邊。"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>支持注意事項</label>
-                                    <small class="form-text text-muted">
-
-                                    </small>
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                                         <label class="custom-control-label" for="customCheck1">
-                                            我已同意<a href="" target="_blank"><u>網站使用條款</u></a>
+                                            我已同意<a href="" target="_blank"><u>網站服務條款</u></a>
                                         </label>
                                     </div>
                                 </div>
@@ -187,17 +198,17 @@
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck2">
                                         <label class="custom-control-label" for="customCheck2">
-                                            匿名支持<br><small class="text-muted">不顯示在啦啦隊與公開的會員資料</small>
+                                            匿名支持<br><small class="text-muted">提案支持者以匿名方式顯示</small>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <a class="btn btn-primary" href="project-order-done.html">立即付款支持</a>
+                        <a class="btn btn-primary" href="project-order-done.html">前往付款支持</a>
 
                         <div class="alert alert-secondary mt-3">
-                            當提案達目標金額100000元時，將進行結算。則10月31日23:00之前若沒有達到100000元的目標金額，將不進行結算，您所支持的金額將獲得退款，並會扣除手續費用。
+                            當提案時間結束後且達成或超過目標資金時，將進行結算；若於 2019-05-27 晚上 23:59:59 秒前沒有達到提案目標資金，則不進行結算，您所支持的金額會扣除金流手續費用後，於 7~14 工作天完成退款。
                         </div>
                     </form>
                 </div>
